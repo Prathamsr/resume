@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body {
-        display: flex;
-        justify-content: center;
-      }
+      
       a {
         text-decoration: none;
       }
@@ -26,7 +23,7 @@
         );
         padding: 10px;
         width: 803px;
-        height: 1132px;
+        height: 1100px;
       }
       .col1 {
         background-color: aliceblue;
@@ -44,7 +41,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 20px;
+        margin: 13px;
       }
       .img img {
         width: 150px;
@@ -83,7 +80,7 @@
         margin: 10px;
       }
       .outter {
-        height: 20px;
+        height: 17px;
         width: 200px;
         background-color: rgb(176, 176, 176);
         border-radius: 60px;
@@ -91,7 +88,7 @@
         margin-left: 10px;
       }
       .inner {
-        height: 20px;
+        height: 17px;
         background: linear-gradient(
           to bottom right,
           rgb(111, 255, 111),
@@ -112,7 +109,7 @@
       button {
         position: relative;
         left: 420px;
-        bottom: -25px;
+        bottom: 10px;
         background: linear-gradient(
           to bottom right,
           rgb(111, 255, 111),
@@ -123,12 +120,12 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="main">
       <div class="col1">
         <a
           style="display: none"
           id="re"
-          href="/requirements\WhatsApp Image 2023-03-19 at 13.08.43.jpg"
+          href="requirements\WhatsApp Image 2023-03-19 at 13.08.43.jpg"
           target="_blank"
           rel="noopener noreferrer"
         ></a>
@@ -366,8 +363,15 @@
           </div>
           <div class="col1-a title">Online Lab Booking</div>
         </div>
-        <button>Print</button>
+        <button id="btn-print" onclick="f1()">Print</button>
       </div>
     </div>
+    <script>
+      
+        function f1(){
+         window.print()
+        }
+      
+    </script>
   </body>
 </html>
