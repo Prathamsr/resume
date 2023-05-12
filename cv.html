@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 40% 58.5%;
+        gap: 10px;
+
+        background: linear-gradient(
+          to bottom right,
+          rgb(111, 255, 111),
+          rgb(28, 173, 246)
+        );
+        padding: 10px;
+        width: 803px;
+        height: 1132px;
+      }
+      .col1 {
+        background-color: aliceblue;
+      }
+      .col2 {
+        background-color: aliceblue;
+      }
+      .segment {
+        margin: 10px;
+      }
+      .headings {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+      }
+      .img img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+      .col1-a {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+      }
+      .col1-h {
+        margin-left: 0px;
+        font-size: x-large;
+      }
+
+      .col1-h .icon {
+        width: 45px;
+        height: 45px;
+      }
+      .icon {
+        width: 35px;
+        height: 35px;
+        margin: 10px;
+        margin-right: 20px;
+      }
+      .icon img {
+        width: 100%;
+        height: 100%;
+      }
+      .col1-b {
+        display: block;
+        text-align: center;
+      }
+      .col1-b .skill {
+        margin: 10px;
+      }
+      .outter {
+        height: 20px;
+        width: 200px;
+        background-color: rgb(176, 176, 176);
+        border-radius: 60px;
+        display: inline-block;
+        margin-left: 10px;
+      }
+      .inner {
+        height: 20px;
+        background: linear-gradient(
+          to bottom right,
+          rgb(111, 255, 111),
+          rgb(28, 173, 246)
+        );
+        border-radius: 60px;
+        display: block;
+      }
+      .time {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(6, 127, 187);
+        font-size: 15px;
+      }
+      .title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      button {
+        position: relative;
+        left: 420px;
+        bottom: -25px;
+        background: linear-gradient(
+          to bottom right,
+          rgb(111, 255, 111),
+          rgb(28, 173, 246)
+        );
+        text-decoration: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col1">
+        <a
+          style="display: none"
+          id="re"
+          href="/requirements\WhatsApp Image 2023-03-19 at 13.08.43.jpg"
+          target="_blank"
+          rel="noopener noreferrer"
+        ></a>
+        <div class="img" onclick="document.getElementById('re').click()">
+          <img
+            src="requirements\WhatsApp Image 2023-03-19 at 13.08.43.jpg"
+            alt=""
+          />
+        </div>
+        <div class="segment">
+          <div
+            class="col1-a col1-h"
+            style="justify-content: center; margin-left: 0px"
+          >
+            PRATHAM SINGH
+          </div>
+          <div class="col1-a">
+            <div class="icon">
+              <img src="requirements\portfolio.png" alt="" />
+            </div>
+            <div class="words">Developer</div>
+          </div>
+          <div class="col1-a">
+            <div class="icon">
+              <img src="requirements\home.png" alt="" />
+            </div>
+            <div class="words">Jodhpur</div>
+          </div>
+          <div class="col1-a">
+            <div class="icon">
+              <img src="requirements\email.png" alt="" />
+            </div>
+            <div class="words">
+              <a href="mailto:prathamsr29@gmail.com"> prathamsr29@gmail.com </a>
+            </div>
+          </div>
+          <div class="col1-a">
+            <div class="icon">
+              <img src="requirements\contact-us.png" alt="" />
+            </div>
+            <div class="words"><a href="tel:+8824579891">8824579891</a></div>
+          </div>
+        </div>
+        <div class="segment">
+          <div class="col1-a col1-h">
+            <div class="icon">
+              <img src="requirements\setting.png" alt="" />
+            </div>
+            <div class="headings">Skills</div>
+          </div>
+          <div class="col1-b">
+            <div class="skill">Advanced Python (Flask, Django)</div>
+            <div class="level">
+              <span class="outter">
+                <span class="inner" style="width: 180px">
+                  <span class="percent">90%</span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="col1-b">
+            <div class="skill">SAS (Programming and Analytics)</div>
+            <div class="level">
+              <span class="outter">
+                <span class="inner" style="width: 80%">
+                  <span class="percent">80%</span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="col1-b">
+            <div class="skill">Full Stack Development</div>
+            <div class="level">
+              <span class="outter">
+                <span class="inner" style="width: 70%">
+                  <span class="percent">70%</span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="col1-b">
+            <div class="skill">DBMS (MySQL ,SQLite, Oracle)</div>
+            <div class="level">
+              <span class="outter">
+                <span class="inner" style="width: 75%">
+                  <span class="percent">75%</span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="segment">
+          <div class="col1-a col1-h">
+            <div class="icon">
+              <img src="requirements\coding.png" alt="" />
+            </div>
+            <div class="headings">Programming Languages</div>
+          </div>
+          <div class="col1-b" style="text-align: left">
+            <div class="skill">Python</div>
+            <div class="level">
+              <span class="outter">
+                <span class="inner" style="width: 85%"> </span>
+              </span>
+            </div>
+          </div>
+          <div class="col1-b" style="text-align: left">
+            <div class="skill">Java</div>
+            <div class="level">
+              <span class="outter">
+                <span class="inner" style="width: 55%"> </span>
+              </span>
+            </div>
+          </div>
+          <div class="col1-b" style="text-align: left">
+            <div class="skill">HTML</div>
+            <div class="level">
+              <span class="outter">
+                <span class="inner" style="width: 85%"> </span>
+              </span>
+            </div>
+          </div>
+          <div class="col1-b" style="text-align: left">
+            <div class="skill">CSS</div>
+            <div class="level">
+              <span class="outter">
+                <span class="inner" style="width: 65%"> </span>
+              </span>
+            </div>
+          </div>
+          <div class="col1-b" style="text-align: left">
+            <div class="skill">JavaScript</div>
+            <div class="level">
+              <span class="outter">
+                <span class="inner" style="width: 75%"> </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col2">
+        <div class="segment">
+          <div class="col1-a col1-h">
+            <div class="icon">
+              <img src="requirements\job.png" alt="" />
+            </div>
+            <div class="headings">Work Experience</div>
+          </div>
+        </div>
+        <div class="segment">
+          <div class="col1-a">
+            <div class="icon">
+              <img src="requirements\calendar.png" alt="" />
+            </div>
+            <div class="time">OCT2022 – DEC2022 and FEB2023 - APL2023</div>
+          </div>
+          <div class="col1-a title">Trainee in Base SAS programing / SAS</div>
+          <div class="col1-a des">
+            This course is for users who want to learn how to write SAS programs
+            to access, explore, prepare, and analyze data. It is the entry point
+            to learning SAS programming for data science, machine learning, and
+            artificial intelligence. It is a prerequisite to many other SAS
+            courses.
+          </div>
+          <div class="col1-a">
+            <div class="icon">
+              <img src="requirements\calendar.png" alt="" />
+            </div>
+            <div class="time">JUN2022 – JUL2022</div>
+          </div>
+          <div class="col1-a title">Project Based Trainee / JIET</div>
+          <div class="col1-a des">
+            A problem given in Smart India Hackathon implemented through a
+            web-based portal. Such a solution would lead to more judicious
+            utilization of resources and assets at national level and would
+            benefit students staying across the country. It will have a
+            significant impact on education and skill development at national
+            level even in post-covid scenario
+          </div>
+        </div>
+
+        <div class="segment">
+          <div class="col1-a col1-h">
+            <div class="icon">
+              <img src="requirements\graduation-cap.png" alt="" />
+            </div>
+            <div class="headings">Education</div>
+          </div>
+          <div class="col1-a title">
+            <b>
+              <a href="https://www.jietjodhpur.ac.in/">
+                Jodhpur Institute of Engineering & Technology (JIET)
+              </a>
+            </b>
+          </div>
+          <div class="col1-a">
+            <div class="icon">
+              <img src="requirements\calendar.png" alt="" />
+            </div>
+            <div class="time">2021 – 2025</div>
+          </div>
+          <div class="col1-a title">
+            B.Tech in Computer Science and Engineering (CSE)
+          </div>
+          <div class="col1-a title">
+            <b
+              ><a href="https://www.mayoorchopasnischool.org/">
+                Mayoor Chopansi School
+              </a>
+            </b>
+          </div>
+          <div class="col1-a">
+            <div class="icon">
+              <img src="requirements\calendar.png" alt="" />
+            </div>
+            <div class="time">2011 – 2021</div>
+          </div>
+          <div class="col1-a title">High School</div>
+        </div>
+        <div class="segment">
+          <div class="col1-a col1-h">
+            <div class="icon">
+              <img src="requirements\trophy.png" alt="" />
+            </div>
+            <div class="headings">Awards</div>
+          </div>
+          <div class="col1-a title">
+            <b>Best Non-syllabus project,CSE</b>
+          </div>
+          <div class="col1-a">
+            <div class="icon">
+              <img src="requirements\calendar.png" alt="" />
+            </div>
+            <div class="time">MAR 2023</div>
+          </div>
+          <div class="col1-a title">Online Lab Booking</div>
+        </div>
+        <button>Print</button>
+      </div>
+    </div>
+  </body>
+</html>
