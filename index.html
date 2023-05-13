@@ -9,6 +9,7 @@
       body {
         margin: 0px;
         padding: 0px;
+        
       }
       a {
         text-decoration: none;
@@ -405,7 +406,10 @@
     </div>
     <script>
       function f1() {
+        var a=document.getElementById("btn-print");
+        a.style.display="none";
         window.print();
+        a.style.display="block";
       }
       function tog(){
         var clickimg = document.getElementById("afterclick");
